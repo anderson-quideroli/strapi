@@ -1,0 +1,51 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: strapi-app
+  name: strapi-app
+  namespace: strapi
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: strapi-app
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: strapi-app
+    spec:
+      containers:
+      - image: quideroli/strapi:latest
+        imagePullPolicy: Always
+        name: strapi-app
+        envFrom:
+          - configMapRef:
+              name: strapi-app-configmap
+          - secretRef:
+              name: strapi-app-secrets
+        ports:
+        - containerPort: 1337
+          name: strapi-app
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "0.2"
+          limits:
+            memory: "256Mi"
+            cpu: "0.4"         
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: strapi-app
+  namespace: strapi  
+spec:
+  selector:
+    app: strapi-app
+  ports:
+    - port: 1337
+      targetPort: 1337
+  type: ClusterIP

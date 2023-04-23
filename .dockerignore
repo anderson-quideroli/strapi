@@ -1,0 +1,13 @@
+.tmp/
+.cache/
+.git/
+.env.example
+.env
+.gitignore
+docker-compose.yml
+Dockerfile
+build/
+node_modules/
+data/
+manifestos_kubernetes/
+README.md

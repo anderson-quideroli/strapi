@@ -1,0 +1,24 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata: 
+  name: strapi-app-ingress
+  namespace: strapi
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+      - strapi.quideroli.local
+    secretName: strapi-app-tls-secret
+  rules:
+  - host: strapi.quideroli.local
+    http:
+      paths:
+      - backend:
+          service:
+            name: strapi-app
+            port:
+              number: 1337
+        path: /
+        pathType: Prefix
+
