@@ -30,7 +30,7 @@
 
 Strapi é um CMS headless de código aberto que oferece aos desenvolvedores a liberdade de escolher suas ferramentas e estruturas favoritas e permite que os editores gerenciem e distribuam seu conteúdo usando o painel de administração do aplicativo. Baseado em um sistema de plug-in, Strapi é um CMS flexível cujo painel de administração e API são extensíveis - e cada parte é personalizável para corresponder a qualquer caso de uso. O Strapi também possui um sistema de usuário integrado para gerenciar em detalhes o que os administradores e usuários finais têm acesso.
 
-Documentação: [Strapi DOCv4](https://docs.strapi.io/dev-docs/intro)
+Documentação: [Strapi DOCv4](https://docs.strapi.io/dev-docs/intro).
 
 ## 🛠 Ferramentas utilizadas
 
