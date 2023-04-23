@@ -61,13 +61,13 @@ O ingress está configurado para efetuar o redirect da porta 80/TCP para 443/TCP
 ## 📐 Topologia Kubernetes Local:
 
 <div allign="center">
-<img src="https://user-images.githubusercontent.com/127318593/233861958-722d0fc2-3302-465e-bd1e-4982dc0d6153.JPG" width="700px" />
+<img src="https://user-images.githubusercontent.com/127318593/233867632-e272b9b5-f885-4989-9eef-139c86040e59.JPG" width="700px" />
 </div>
 
 ## 📐Topologia Strapi:
 
 <div allign="center">
-<img src="https://user-images.githubusercontent.com/127318593/233864136-a69bb5d5-5d7a-4adb-b0c5-4b05464e5321.JPG" width="700px" />
+<img src="https://user-images.githubusercontent.com/127318593/233867656-dcc74cc7-6dd0-4b4e-83a2-ddb35dae34be.JPG" width="700px" />
 </div>
 
 ## 📁 Repositórios
